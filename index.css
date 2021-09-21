@@ -1,0 +1,52 @@
+
+.hello{
+    /* font-size: 20px; */
+    color:darkturquoise;
+    background-color: black;
+    border-style: double;
+    border-width: 2px;
+    border-color: chartreuse;
+}
+p:hover{
+    color: firebrick;
+}
+.form{
+    /* font-size: 20px; */
+    color: black;
+    background-color:bisque;
+    border-radius: 20px;
+    border: 2px, solid, yellow ;
+}
+.yt{
+    /* font-size: 20px; */
+    color:deeppink;
+    background-color:rgb(232, 240, 128);
+    /* float:right; */
+    /* list-style:square; */
+    text-align: center;
+    
+}
+.table{
+    /* font-size: 20px; */
+    color:black;
+    background-color: rgb(205, 163, 212);
+}
+.demo{
+    width: 600px;
+    height: 600px;
+    background-color: black;
+    margin: 100px auto;
+}
+.inner-demo{
+    width: 150px;
+    height: 150px;
+    color: white;
+    background: red;
+    animation: motion 5s linear infinite;
+
+}
+@keyframes motion{
+    100%{
+        transform: translate(400px,400px);
+    }
+}
