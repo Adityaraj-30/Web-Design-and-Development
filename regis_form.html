@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Registration form</title>
+	<style type="text/css">
+		body{
+			background-image: url(img/bg.jpg);
+			background-size: cover;
+		}
+		p{
+			background-color: rgb(135, 250, 221);
+			border-style: dashed;
+		}
+		.form{
+		background-color: rgb(255, 248, 182);
+   		border-style: solid;
+   		margin: 10px;
+    	padding: 10px;
+    	border-radius: 20px;
+    	width: 1000px;
+        margin-left: 200px;
+        }
+        .submitbtn{
+            border-radius: 5px;
+			background-color: #4285F4;
+			color: white;
+			padding: 10px;
+			border-style:outset;
+			border-color: #4285F4;
+			font:bold 15px arial,sans-serif;
+     		text-shadow:none;
+     		cursor: pointer;
+     		margin-left: 300px;
+     		
+            }
+            .resetbtn{
+            border-radius: 5px;
+			background-color: #4285F4;
+			color: white;
+			padding: 10px;
+			border-style:outset;
+			border-color: #4285F4;
+			font:bold 15px arial,sans-serif;
+     		text-shadow:none;
+     		cursor: pointer;
+            margin-left: 200px;
+     	}
+
+
+	</style>
+</head>
+<body class="body">
+	<div class="form">
+			<p style="text-align: center;"><font size="7">
+			Admission Form</font></p>
+		
+			<form action="" method="get">
+
+			<fieldset>
+				<legend align="center" style="font-size: 15px;">
+					<font size="5"><b>
+					Enter students details
+					</b></font>
+				</legend><br>
+				<label for="name">Name : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+				<input type="text" size="20"><br><br>
+				<label for="dob">DOB :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+				<input type="date" name="DOB" placeholder="dd/mm/yyyy"><br><br>
+				<label>E-mail :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+				<input type="text" name="e-mail"><br><br>
+				<label>Phone No. :</label>
+				<input type="text" name="number"><br><br>
+				<label>Gender : </label>
+				<label for="male">Male</label>
+				<input type="radio" name="gender" value="male" id="male">
+				<label for="female">Female</label>
+				<input type="radio" name="gender" value="female" id="female">
+				<label for="others">Other</label>
+				<input type="radio" name="gender" value="others" id="others"><br><br>
+				<label>Select Your Course: </label>
+				<select name="Choose course">
+					<option align="center">Choose Course:</option>
+					<option>B.A. (Hons) Applied Psychology</option>
+					<option>B.A. (Hons) Arabic</option>
+					<option>B.A. (Hons) Bengali</option>
+					<option>B.A. (Hons) Business Economics (BBE)</option>
+					<option>B.A. (Hons) Economics</option>
+					<option>B.A. (Hons) English</option>
+					<option>B.A. (Hons) French</option>
+					<option>B.A. (Hons) Geography</option>
+					<option>B.A. (Hons) German</option>
+					<option>B.A. (Hons) Hindi</option>
+					<option>B.A. (Hons) History</option>
+					<option>B.A. (Hons) Patrakarita Evam Jansanchar</option>
+					<option>B.A. (Hons) Italian</option>
+					<option>B.A. (Hons) Journalism</option>
+					<option>B.A. (Hons) Music</option>
+					<option>B.A. (Hons) Persian</option>
+					<option>B.A. (Hons) Philosophy</option>
+					<option>B.A. (Hons) Political Science</option>
+					<option>B.A. (Hons) Psychology</option>
+					<option>B.A. (Hons) Punjabi</option>
+					<option>B.A. (Hons) Sanskrit</option>
+					<option>B.A. (Hons) Social Work</option>
+					<option>B.A. (Hons) Sociology</option>
+					<option>B.A. (Hons) Spanish</option>
+					<option>B.A. (Hons) Urdu</option>
+					<option>B.A. (Hons.) Hindi Journalism and Mass Communication</option>
+					<option>B.A. Functional Hindi</option>
+					<option>B.A. Vocational Studies</option>
+					<option>B.Ed.</option>
+					<option>B.Ed. Home Science</option>
+					<option>B.Sc. (Genl) Mathematical Science</option>
+					<option>B.Sc. (Hons.) Instrumentation</option>
+					<option>B.Sc. (Hons) Anthropology
+</option>
+					<option>B.Sc. (Hons) Bio-Chemistry</option>
+					<option>B.Sc. (Hons) Biomedical Science</option>
+					<option>B.Sc. (Hons) Chemistry</option>
+					<option>B.Sc. (Hons) Botany</option>
+					<option>B.Sc. (Hons) Computer Science</option>
+					<option>B.Sc. (Hons) Electronics</option>
+					<option>B.Sc. (Hons) Food Technology</option>
+					<option>B.Sc. (Hons) Geology</option>
+					<option>B.Sc. (Hons) Home Science</option>
+					<option>B.Sc. (Hons) Mathematics</option>
+					<option>B.Sc. (Hons) Microbiology</option>
+					<option>B.Sc. (Hons) Physics</option>
+					<option>B.Sc. (Hons) Polymer Science</option>
+					<option>B.Sc. Applied Life Sciences with Agro-Chemical & Pest Management</option>
+					<option>B.Sc. (Hons) Statistics</option>
+					<option>B.Sc. (Hons) Zoology</option>
+					<option>B.Sc. Applied Life Sciences
+</option>
+					<option>B.Sc. (Hons.) Biological Sciences</option>
+					<option>B.Sc. (MT) Radiography</option>
+
+					<option>B.Sc. Applied Science</option>
+
+
+				</select><br><br>
+				<label>Address :</label>
+				<textarea></textarea>
+				
+			</fieldset><br><br>
+			<fieldset>
+				<legend align="center">
+				<font size="5"><b>
+				Enter Parent/Guardian Information</b>
+			</font>
+		</legend><br>
+				<label for="F'name">Father's Name :&nbsp;</label>
+				<input type="text" name="f'name">
+				<label for="F'Occupation">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Father's Occupation :&nbsp;&nbsp;&nbsp;</label>
+				<input type="text" name="occupation"><br><br>
+				<label for="M'name">Mother's Name :</label>
+				<input type="text" name="m'name">
+				<label for="M'Occupation">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mother's Occupation :&nbsp;&nbsp;</label>
+				<input type="text" name="occupation"><br><br>
+				<label>Phone Number :</label>
+				<input type="text" name="">
+				<label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Telephone Number :&nbsp;&nbsp;&nbsp;&nbsp;</label>
+				<input type="text" name=""><br><br>
+				<label>City :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+				<input type="text" name="">
+				<label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;State:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+				<input type="text" name="">
+				
+
+
+			</fieldset><br><br>
+			
+				<button class="submitbtn">Submit</button>&nbsp;&nbsp;
+				<button class="resetbtn">Reset</button>
+			
+			
+		
+	</form>
+	</form>
+
+</body>
+</html>

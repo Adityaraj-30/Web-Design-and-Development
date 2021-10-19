@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Demo</title>
+    <style type="text/css">
+        .container {
+            background-color: aquamarine;
+            border: 2px solid rebeccapurple;
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            column-gap: 10px;
+            row-gap: 10px;
+            /* grid-gap dono me add kar dega gap*/
+            /* grid-template-columns:repeat(5,1fr) se repeat hoga(auto-fill,minmax(250px,1fr))*/
+            grid-auto-rows: minmax(10px, auto);
+        }
+
+        header {
+            /* grid-column-start: 1;
+            grid-column-end: 3; */
+            grid-column: 1/4;
+            grid-row: 1;
+            display: grid;
+            padding: 20px;
+            text-align: center;
+            background: #1abc9c;
+            color: white;
+            background-position: left;
+            background-size: cover;
+        }
+
+        aside {
+            grid-column: 1;
+            grid-row: 3;
+
+            background-color: #ffd3d3;
+            padding: 10px;
+            text-align: left;
+        }
+
+        article {
+            grid-column: 2;
+            grid-row: 3;
+
+            background-color: white;
+            padding: 20px;
+        }
+
+        navbar {
+            grid-column: 1/4;
+            grid-row: 2;
+            display: grid;
+            background-color: black;
+        }
+
+        navbar ul li {
+            box-sizing: border-box;
+            list-style: none;
+            display: inline-block;
+            padding: 0px 38px;
+            position: relative;
+        }
+
+        navbar ul li a {
+
+            padding: 14px 20px;
+            border-radius: 5px;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        input,
+        textarea {
+            padding: 6px;
+            border: solid white;
+            border-radius: 5px;
+            margin-left: 20.8em;
+        }
+
+        /* Change color on hover */
+        navbar a:hover {
+            background-color: whitesmoke;
+            color: black;
+        }
+
+        footer {
+            grid-column: 1/4;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            background: black;
+        }
+
+        header,
+        footer {
+            border: 2px solid black;
+        }
+
+        div {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>BSc. (Hons) Computer Science</h1>
+        </header>
+        <navbar>
+
+            <ul>
+
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">Contact</a></li>
+                <input id="search" type="search" name="" placeholder="search">
+
+            </ul>
+
+        </navbar>
+        <article>
+            <h2>Web Design and Development</h2>
+            <p>This course will introduce students to the fundamental concepts of web
+                development. This course will equip students with the ability to design
+                and develop a dynamic website using technologies like HTML, CSS, JavaScript,
+                PHP and MySQL on platform like WAMP/XAMP/LAMP.
+            </p><br>
+            <p>
+                <b>Introduction</b> :- Introduction to Static and Dynamic Websites (Website Designing and Anatomy of
+                Webpage)<br><br>
+                <b>HTML, CSS & DOM </b>:- Introduction to HTML and CSS (Basic Tags, Lists, Handling Graphics, Tables,
+                Linking, Frames, Forms), Introduction to DOM<br><br>
+                <b>JavaScript </b>:- Introduction to JavaScript (Basic Programming Techniques & Constructs, GET/POST
+                Methods, Operators, Functions, DOM Event handling, Forms Validation, Cookies), Inter-page communication
+                and form data handling using JavaScript<br><br>
+                <b>PHP: Backend Of Websites </b>:- Introduction to PHP (Working, Difference with other technologies like
+                JSP and ASP), PHP Programming Techniques (Data types, Operators, Arrays, Loops, Conditional statements,
+                Functions, Regular expressions)<br><br>
+                <b>Databases in Websites</b> :- Form Data Handling with PHP, Database connectivity and handling using
+                PHP-MySQL
+            </p>
+        </article>
+        <aside>
+            <h2>Important Links</h2>
+            <h4>1<sup>st</sup> Semester Subject are :</h4>
+            <ol><a href="https://www.javatpoint.com/cpp-tutorial" target="main">
+                    <li>
+                        C++
+                    </li>
+                </a>
+
+                <li>
+                    CSA
+                </li>
+                <li>
+                    AECC
+                </li>
+                <li>
+                    GE-English
+                </li>
+
+            </ol>
+            <h4>2<sup>nd</sup> Semester Subject are :</h4>
+            <ol><a href="https://www.javatpoint.com/java-tutorial" target="main">
+                    <li>
+                        Java
+                    </li>
+                </a>
+
+                <li>
+                    DS
+                </li>
+                <li>
+                    EVS
+                </li>
+                <li>
+                    GE-Linear Algebra
+                </li>
+
+            </ol>
+            <h4>3<sup>rd</sup> Semester Subject are :</h4>
+            <ol>
+                <li>
+                    OS
+                </li>
+                <a href="https://www.javatpoint.com/data-structure-tutorial">
+                    <li>
+                        Data Structurs
+                    </li>
+                </a>
+                <li>
+                    Computer Networks
+                </li>
+                <li>
+                    Web Design and Development
+                </li>
+                <li>
+                    GE-Differential Equation
+                </li>
+
+            </ol><br>
+
+
+            </ul><br>
+
+        </aside>
+        <footer>
+            Contact Us: <email>aditya205815@keshav.du.ac.in</email>
+        </footer>
+
+
+    </div>
+</body>
+
+</html>

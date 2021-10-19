@@ -1,0 +1,55 @@
+.form{
+    background-color:rgb(246, 210, 210);
+    border-style: dotted;
+    margin-top: 2%;
+    padding: 10px;
+    border-radius: 20px;
+    width: 300px;
+    margin-left: 520px;
+  
+    
+}
+.signupbtn{
+    border-radius: 5px;
+			background-color: #4285F4;
+			color: white;
+			padding: 10px;
+			border-style:outset;
+			border-color: #4285F4;
+			font:bold 15px arial,sans-serif;
+     		text-shadow:none;
+     		cursor: pointer;
+     		margin-left: 100px;
+     		
+}
+.signinbtn{
+    border-radius: 5px;
+			background-color: #4285F4;
+			color: white;
+			padding: 10px;
+			border-style:outset;
+			border-color: #4285F4;
+			font:bold 15px arial,sans-serif;
+     		text-shadow:none;
+     		cursor: pointer;
+     	
+     		
+}
+select,input,textarea{
+	padding: 6px;
+	border: solid black;
+	border-radius: 5px;
+}
+.body{
+	background-image: url(img/bg.jpg);
+	background-size: cover;
+}
+h3{
+	background-color:rgb(215, 255, 162);
+    border-style: dotted;
+    margin-top: 9%;
+    padding: 10px;
+    border-radius: 20px;
+    width: 300px;
+    margin-left: 520px;
+}

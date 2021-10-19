@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+
+</head>
+
+<body>
+    <h1 id="h" style="text-align: center;">DOM - document object model</h1>
+    <div></div>
+    <!-- DOM  document object model
+    document object 
+    document.head
+    document.body
+    html tag is parent and head & body are child node
+    document.documentElement    (HTML tag)
+    childNodes - collection lists all child nodes
+    document.body.parentNode == document.documentElement    (return true)
+    document.head.nextSibling   HTML ke body element 
+    getElementBy
+
+    div.querySelectorAll("h1")
+    div.querySelector("h1") == div.querySelectorAll("h1")[0]
+    elem.getElementByClassName("main")
+    getElementByTagName("h1")
+    
+    BOM-- browser object model-->
+    
+
+
+    <script type="text/javascript">
+
+    // for(let i = 0; i< document.body.childNodes.length ; i++){
+    //     alert(document.body.childNodes[i]);
+    // }
+
+    // let element = document.getElementById("h");
+    // element.style.background = "red";
+    // let a = prompt("Enter Color");
+    // document.body.style.background = a;
+    //     // alert("Hello Ji!!!");
+
+    // let divs = document.querySelectorAll("div");
+    // alert(divs.length);
+
+    // const input = prompt("Enter a number:"); // input's type is string
+    // const nb = Number(input); // nb's type is number
+
+    // const radius = 5.5;
+    // const pi = 3.14;
+    // const perimeter = 2 * pi * radius;
+    // console.log(perimeter);
+
+    // const firstName = prompt("Enter Firstname: ");
+    // const lastName = prompt("\nEnter Lastname: ");
+    // console.log("Hello, "+ firstName+" "+lastName);
+
+    // const rawPrice = Number(prompt("Enter the raw price:"));
+    // // VAT rate = 20.6%
+    // const vatRate = 20.6 / 100;
+    // const finalPrice = rawPrice * (1 + vatRate);
+    // console.log(`The final price is ${finalPrice}`);
+
+    // const celsius = Number(prompt("Enter Temp in Celsius: "));
+    // const farhenheit = ((celsius*9/5)+32);
+    // console.log(`Temp in Farhenheit: ${farhenheit}`);
+
+    const number = Number(prompt("Enter a number:"));
+    if (number > 0) {
+        console.log(`${number} is positive`);
+}
+    </script>
+</body>
+
+</html>

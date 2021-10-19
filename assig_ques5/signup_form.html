@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup_form.css" type="text/css">
+</head>
+
+<body class="body" >
+    <h3 style="text-align: center;"><u>Create an Account</u></h3>
+    <div class="form">
+        <h4 style="text-align: center;"> Sign Up </h4>
+
+        <form action="" method="get">
+            <fieldset>
+                <legend>Information</legend>
+                <label style="text-align: left;" for="fname">First Name </label><br>
+                <input id="fname" type="text" name="user_name" placeholder="enter first name" size="15"
+                    required><br><br>
+                <label style="text-align: left;" for="lname">Last Name </label><br>
+                <input id="lname" type="text" name="user_name" placeholder="enter last name" size="15" required><br><br>
+                <label style="text-align: left;" for="email">Email address </label><br>
+                <input id="email" type="email" name="user_email" placeholder="enter email" size="15" required><br><br>
+                <label style="text-align: left;" for="password">Password </label><br>
+                <input id="password" type="password" name="user_password" placeholder="enter password" size="15"
+                    required><br><br>
+                <label style="text-align: left;" for="cpassword"> Confirm Password</label><br>
+                <input id="cpassword" type="password" name="user_password" placeholder="confirm password" size="15"
+                    required><br><br>
+                    <input type="radio" value="Male" name="Gender" id="male">
+                    <label for="male">Male</label>
+                    
+                    <input type="radio" value="Female" name="Gender" id="female">
+                    <label for="female">Female</label>
+                    
+                    <input type="radio" value="Other" name="Gender" id="other">
+                    <label for="other">Other</label><br><br>
+                <input id="cbox" type="checkbox" name="user_verif" required>
+                <label for="cbox">I accept the Terms of Use & Privacy Policy. </label><br><br>
+                <button type="submit" style="padding: 10px;">Sign Up</button>
+
+
+
+            </fieldset>
+
+
+        </form>
+
+    </div>
+</body>
+
+</html>

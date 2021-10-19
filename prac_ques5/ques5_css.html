@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Dummy College</title>
+	<style type="text/css">
+		frame{
+			border: solid 2px;
+		}
+		#header{
+			background-color: aqua;
+		}
+		#footer{
+			background-color: darkblue;
+		}
+		#msg,#notice{
+			background-color: lightskyblue;
+		}
+	</style>
+</head>
+<frameset rows="12%,5%,50%,25%,5%" frameborder="0">
+	<frame src="header_css.html" noresize="1" id="header" scrolling="no"></frame>
+	<frame src="nav_css.html" noresize="1" scrolling="no"></frame>
+	<frameset cols="50%,50%" frameborder="0">
+		<frame src="msg_css.html" noresize="1" id="msg"></frame>
+		<frame src="notice_css.html" noresize="1" id="notice"></frame>
+	</frameset>
+	<frame src="gallary_css.html" noresize="1"></frame>
+	<frame src="footer_css.html" noresize="1" id="footer"></frame>
+</frameset>
+</html>
