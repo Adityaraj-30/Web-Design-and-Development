@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Object</title>
+</head>
+
+<body>
+    <div style="text-align: center; padding: 100px;" id="pp">
+        <h1>Javascript <br><br> New Random Color
+        </h1>
+    </div>
+    <p id="wr" style="text-align: center;">This course will introduce students to the fundamental concepts of web
+        development. This course will equip students with the ability to design
+        and develop a dynamic website using technologies like HTML, CSS, JavaScript,
+        PHP and MySQL on platform like WAMP/XAMP/LAMP.
+    </p>
+    <script>
+        const setBg = () => {
+            const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+            document.getElementById("pp").style.backgroundColor = "#" + randomColor;
+            color.innerHTML = "#" + randomColor;
+        };
+        var myVar = setInterval(setBg, 2000);
+        function timedText() {
+            document.getElementById("wr").style.fontSize = "x-large";
+        }
+        var myv = setTimeout(timedText, 3000);
+    </script>
+</body>
+
+</html>
