@@ -1,13 +1,13 @@
 //FUNCTION FOR GETTING THE NAME OF LAST USER
 function getCookie(cookieName) {
-    var cookieValue = "";
+    let cookieValue = "";
     if (document.cookie) {
-        var cookies_string = document.cookie;
-        var cookieArr = cookies_string.split(';');
-        for (var i = 0; i < cookieArr.length; i++) {
-            var cookie = cookieArr[i].trim();
+        let cookies_string = document.cookie;
+        let cookieArr = cookies_string.split(';');
+        for (let i = 0; i < cookieArr.length; i++) {
+            let cookie = cookieArr[i].trim();
             if (cookie.startsWith(cookieName)) {
-                var position = cookie.indexOf("=");
+                let position = cookie.indexOf("=");
                 cookieValue = cookie.slice(position + 1);
             }
         }
@@ -24,8 +24,8 @@ function setCookie(cname, cvalue, exdays) {
 function forgetMe() {
     delCookie("lastuser");
 }
-var currentUser = prompt("ENTER YOUR NAME : ");
-var lastuser = getCookie("lastuser");
+let currentUser = prompt("ENTER YOUR NAME : ");
+let lastuser = getCookie("lastuser");
 if (lastuser == currentUser)
     alert("WELCOME AGAIN " + currentUser)
 else {

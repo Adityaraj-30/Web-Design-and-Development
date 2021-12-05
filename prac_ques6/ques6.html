@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Student Details</title>
+	<style type="text/css">
+		fieldset{
+			border: 1px solid grey;
+			border-radius: 6px;
+		}
+		h1{
+			background-color: lightblue;
+			color: white;
+			padding: 10px;
+			border-color: lightblue;
+			border-radius: 6px;
+			font-size: 45px;
+		}
+		select,input,textarea{
+			padding: 10px;
+			border: solid grey;
+			border-radius: 5px;
+		}
+		label{
+			font-size: 20px;
+		}
+	</style>
+</head>
+<body>
+	<center><h1>Student Details</h1></center>
+	<form action="report.php" method="get" onsubmit="return validate()">
+		<fieldset>
+			<legend><h2>Personal Details</h2></legend>
+			<label for="fname">Student Name*</label>
+			<input type="text" name="First Name"  id="fname" placeholder="First Name" required style="margin-left: 0.65em;width: 13.1em;"> 
+			<input type="text" name="Middle Name"  id="mname" placeholder="Middle Name" style="margin-left: 7.5em;width: 13.1em;">
+			<input type="text" name="Last Name"  id="lname" placeholder="Last Name" style="margin-left: 7.5em;width: 13.1em;"><br><br>
+			<label for="roll">Roll Number*</label>
+			<input type="number" name="roll" id="roll" style="margin-left:1.35em;width: 13.1em" placeholder="Roll Number" required><br><br>
+			<label for="email" style="margin-right: 0.35em;">Email Address*</label>
+			<input type="text" name="Email" id="email" required style="width:13.1em"placeholder="abc@keshav.du.ac.in">
+			<label for="age" style="margin-left: 17.8em">Age*</label>
+			<input type="number" name="age" id="age" required style="width:13.1em;"><br><br>
+			<label for="Gender" style="margin-right: 2.97em;">Gender*</label>
+			
+			<input type="radio" value="Male" name="Gender" id="male">
+			<label for="male">Male</label>
+			
+			<input type="radio" value="Female" name="Gender" id="female">
+			<label for="female">Female</label>
+			
+			<input type="radio" value="Other" name="Gender" id="other">
+			<label for="other">Other</label><br><br>
+			
+			<label for="mno">Mobile number*</label>
+			<input type="number" name="Mobile Number" id="mno" min="1000000000" max="9999999999" required style="width: 13.1em"><br><br>
+
+			<label style="margin-right: 0.3em;">Societies Opted</label>
+			<input type="checkbox" name="society" value="Blitz" id="blitz">
+			<label for="blitz">Blitz</label>
+			<input type="checkbox" name="society" value="Advaitaa" id="advaitaa">
+			<label for="advaitaa">Advaitaa</label>
+			<input type="checkbox" name="society" value="Anhad" id="anhad">
+			<label for="anhad">Anhad</label>
+			<input type="checkbox" name="society" value="Illuminati" id="illuminati">
+			<label for="illuminati">Illuminati</label>
+			<input type="checkbox" name="society" value="Maniera" id="maniera">
+			<label for="maniera">Maniera</label>
+			<input type="checkbox" name="society" value="Naksh" id="naksh">
+			<label for="naksh">Naksh</label>
+			<input type="checkbox" name="society" value="Nrityaang" id="nrityaang">
+			<label for="nrityaang">Nrityaang</label>
+			<input type="checkbox" name="society" value="Shades" id="shades">
+			<label for="shades">Shades</label>
+			<input type="checkbox" name="society" value="Spic-Macay" id="spic-macay">
+			<label for="spic-macay">Spic-Macay</label>
+			<input type="checkbox" name="society" value="Vagmita" id="vagmita">
+			<label for="vagmita">Vagmita</label>
+			<input type="checkbox" name="society" value="Debsoc" id="debsoc">
+			<label for="debsoc">Debsoc</label><br><br>
+			<label for="course" style="margin-right:3.35em">Course*</label>
+			<select name="course" required>
+					<option></option>
+					<option>B.A. (Hons) Applied Psychology</option>
+					<option>B.A. (Hons) Arabic</option>
+					<option>B.A. (Hons) Bengali</option>
+					<option>B.A. (Hons) Business Economics (BBE)</option>
+					<option>B.A. (Hons) Economics</option>
+					<option>B.A. (Hons) English</option>
+					<option>B.A. (Hons) French</option>
+					<option>B.A. (Hons) Geography</option>
+					<option>B.A. (Hons) German</option>
+					<option>B.A. (Hons) Hindi</option>
+					<option>B.A. (Hons) History</option>
+					<option>B.A. (Hons) Patrakarita Evam Jansanchar</option>
+					<option>B.A. (Hons) Italian</option>
+					<option>B.A. (Hons) Journalism</option>
+					<option>B.A. (Hons) Music</option>
+					<option>B.A. (Hons) Persian</option>
+					<option>B.A. (Hons) Philosophy</option>
+					<option>B.A. (Hons) Political Science</option>
+					<option>B.A. (Hons) Psychology</option>
+					<option>B.A. (Hons) Punjabi</option>
+					<option>B.A. (Hons) Sanskrit</option>
+					<option>B.A. (Hons) Social Work</option>
+					<option>B.A. (Hons) Sociology</option>
+					<option>B.A. (Hons) Spanish</option>
+					<option>B.A. (Hons) Urdu</option>
+					<option>B.A. (Hons.) Hindi Journalism and Mass Communication</option>
+					<option>B.A. Functional Hindi</option>
+					<option>B.A. Vocational Studies</option>
+					<option>B.Ed.</option>
+					<option>B.Ed. Home Science</option>
+					<option>B.Sc. (Genl) Mathematical Science</option>
+					<option>B.Sc. (Hons.) Instrumentation</option>
+					<option>B.Sc. (Hons) Anthropology</option>
+					<option>B.Sc. (Hons) Bio-Chemistry</option>
+					<option>B.Sc. (Hons) Biomedical Science</option>
+					<option>B.Sc. (Hons) Chemistry</option>
+					<option>B.Sc. (Hons) Botany</option>
+					<option>B.Sc. (Hons) Computer Science</option>
+					<option>B.Sc. (Hons) Electronics</option>
+					<option>B.Sc. (Hons) Food Technology</option>
+					<option>B.Sc. (Hons) Geology</option>
+					<option>B.Sc. (Hons) Home Science</option>
+					<option>B.Sc. (Hons) Mathematics</option>
+					<option>B.Sc. (Hons) Microbiology</option>
+					<option>B.Sc. (Hons) Physics</option>
+					<option>B.Sc. (Hons) Polymer Science</option>
+					<option>B.Sc. Applied Life Sciences with Agro-Chemical & Pest Management</option>
+					<option>B.Sc. (Hons) Statistics</option>
+					<option>B.Sc. (Hons) Zoology</option>
+					<option>B.Sc. Applied Life Sciences</option>
+					<option>B.Sc. (Hons.) Biological Sciences</option>
+					<option>B.Sc. (MT) Radiography</option>
+					<option>B.Sc. Applied Science</option>
+				</select><br><br>
+			<label for="address" style="margin-right: 2.9em;">Address*</label>
+			<textarea name="address" id="address" required style="width:55%;height: 80px;resize: none;vertical-align: middle;"></textarea><br><br>
+			<label for="photo" style="margin-right:0.5em">Upload Image*</label>
+			<input type="file" name="photo" id="photo" required accept="image/*">
+		</fieldset>
+		<center><input type="submit" name="Submit" value="Submit" style="margin-right: 2em; background-color: lightblue;color: grey;margin-top: 2em;cursor: pointer;">
+			<input type="reset" name="Reset" value="Reset" style="margin-left: 2em; background-color: lightblue;color: grey;margin-top: 2em;cursor: pointer;"></center>
+	</form>
+    <script>
+        function validate() {
+            let inputs=document.querySelectorAll("input");
+            const gen=[],soc=[];
+            let temp=0,temp1=0;
+            for(let i=0;i<inputs.length;i++)
+            {
+                if(inputs[i].value=="")
+                {
+                    alert("Please fill all fields.");
+                    return false;
+                }
+                if(inputs[i].type=="radio")
+                    gen[temp++]=inputs[i];
+                if(inputs[i].type=="checkbox")
+                    soc[temp1++]=inputs[i];
+            }
+            if(gen[0].checked||gen[1].checked||gen[2].checked)
+            {
+                if(soc[0].checked||soc[1].checked||soc[2].checked||soc[3].checked||soc[4].checked||soc[5].checked||soc[6].checked||soc[7].checked||soc[8].checked||soc[9].checked||soc[10].checked)
+                {
+                    let roll=document.getElementById('roll').value;
+                    if(roll.length!=4)
+                    {
+                        alert("Enter valid Roll number of 4 digits");
+                        return false;
+                    }
+                    let email=document.getElementById('email').value; 
+                    let temp_email=email.split("@");
+                    if(temp_email.length!=2)
+                    {
+                        alert("Enter valid Keshav email id");
+                        return false;
+                    }
+                    if(temp_email[1]!="keshav.du.ac.in")
+                    {
+                        alert("Enter valid Keshav email id");
+                        return false;    
+                    }
+                    let age=document.getElementById('age').value;
+                    if(age<16||age>22)
+                    {
+                        alert("Enter valid Age between 16-22");
+                        return false;
+                    }
+                    let photo=document.getElementById('photo').value;
+                    let ext=photo.split(".");
+                    ext=ext[ext.length-1];
+                    if(ext=="jpg"||ext=="jpeg"||ext=="png")
+                    {
+                        alert("All entries valid");
+                        return true;
+                    }
+                    else
+                    {
+                        alert("Upload valid image type i.e jpg/jpeg/png");
+                        return false;
+                    }
+                }
+                else{
+                    alert("Select atleast one society");
+                    return false;
+                }
+            }
+            else{
+                    alert("Select Gender");
+                    return false;
+                }
+        }
+    </script>
+</body>
+</html>
