@@ -40,12 +40,12 @@
         a. All divisions have a solid border of 2px.
         b. Header and Footer division have aquamarine and dark blue background color respectively and same font-style which are larger than all other divisions.
         c. Background color of the Navigation division should be aqua and links of the pages should appear in UPPERCASE.
-        d. Background color of the message and notices division should be light sky blue and text color should not be black. Message text should be italic and                notices should be bold.
+        d. Background color of the message and notices division should be light sky blue and text color should not be black.Message text should be italic and                notices should be bold.
 
 
 
 
-                                                                 #JavaScript
+                                                              #JavaScript
     1. Write JavaScript to validate the form created by student in HTML practical 3 keeping in mind following constraints:
         a. No text box or text area should be left blank.
         b. Validate whether the Roll no. and Email of the student are in proper format.
