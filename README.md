@@ -1,5 +1,5 @@
 # Web-Design-and-Development
-  #HTML
+                                                            #HTML
                                                    
 1. Create an HTML Page showing information about your favorite movie in following manner:
     a. Name of the movie as the heading in center as well as title of page.
@@ -57,13 +57,6 @@
 
                                                         #PHP
 1. Write PHP script to construct the following pattern using nested for loop.
-* * * * * * *
-* * *   * * *
-* *       * * 
-*           *
-* *       * * 
-* * *   * * *
-* * * * * * *
 
 2. Accept a number from an HTML page and send it to a PHP file. Validate that this number is a positive integer in the range 2-100. PHP file should check whether this number is prime or composite. If number is found prime then Fibonacci series till that element is also printed otherwise factorial of that           number is to be printed.
 3. Write a PHP file colors.php which declares an array of ten colors names. Every time this file is accessed a random color from this array should be chosen and same is to be set as the background color of a division.
